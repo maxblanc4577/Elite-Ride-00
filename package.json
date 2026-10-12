@@ -1,0 +1,43 @@
+{
+  "name": "elite-ride-dominica",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "clean": "rm -rf dist",
+    "clean:build": "npm run build",
+    "build": "node -e \"const fs=require('fs'),esbuild=require('esbuild');esbuild.transformSync(fs.readFileSync('assets/index-bkkyw8kf.js','utf8'),{loader:'js'});fs.mkdirSync('dist/assets',{recursive:true});fs.copyFileSync('index.html','dist/index.html');for(const f of fs.readdirSync('assets'))fs.copyFileSync('assets/'+f,'dist/assets/'+f);console.log('Build succeeded');\"",
+    "start": "node server.cjs"
+  },
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/d3": "^7.4.3",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "canvas-confetti": "^1.9.4",
+    "d3": "^7.9.0",
+    "dotenv": "^17.2.3",
+    "esbuild": "^0.25.0",
+    "express": "^4.21.2",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.10.1",
+    "stripe": "^22.6.2",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3"
+  },
+  "devDependencies": {
+    "@netlify/vite-plugin": "^3.0.1",
+    "@types/canvas-confetti": "^1.9.0"
+  }
+}

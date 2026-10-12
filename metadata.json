@@ -1,0 +1,11 @@
+{
+  "name": "Remix Elite Ride - Dominica (10)",
+  "description": "Dominica\u0027s premier ride-sharing platform with real-time tracking, fair EC$ pricing, and local payment methods.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
